@@ -1,11 +1,11 @@
-🚀 PyPUtil Install
+### 🚀 PyPUtil Install
 
 Minimal toolkit for managing Python environments, packages, compilers, headers, and pip.
 
 
 ---
 
-✨ Features
+### ✨ Features
 
 Tool	What it does
 
@@ -21,11 +21,13 @@ compiler_installer	Install GCC, Clang, Zig, Emscripten, NDK
 
 ---
 
-📦 Install
+### 📦 Install
 
+```bash
 pip install pyputil_install
+```
 
-Optional Extras
+## Optional Extras
 
 pip install pyputil_install[aiohttp]
 pip install pyputil_install[color]
@@ -35,9 +37,9 @@ pip install pyputil_install[all]
 
 ---
 
-⚡ Quick CLI Usage
+### ⚡ Quick CLI Usage
 
-Package Manager
+## Package Manager
 
 package-installer install requests
 package-installer upgrade --all
@@ -47,7 +49,7 @@ package-installer list --outdated
 
 ---
 
-Pip Repair
+## Pip Repair
 
 pip-installer
 pip-installer --version 21.3.1
@@ -56,7 +58,7 @@ pip-installer --uninstall
 
 ---
 
-Stdlib Installer
+## Stdlib Installer
 
 stdlib-installer install json
 stdlib-installer list
@@ -65,7 +67,7 @@ stdlib-installer remove json
 
 ---
 
-Python Manager
+## Python Manager
 
 python-installer install 3.11.5
 python-installer list
@@ -74,16 +76,16 @@ python-installer switch 3.11.5
 
 ---
 
-Headers Installer
+## Headers Installer
 
 headers-installer --version 3.11.0
 
 
 ---
 
-🧠 Quick API Usage
+### 🧠 Quick API Usage
 
-Auto Installer
+## Auto Installer
 
 from pyputil_install.auto_installer import auto_install_sync
 
@@ -94,7 +96,7 @@ import requests
 
 ---
 
-Package Installer
+## Package Installer
 
 from pyputil_install.package_installer import PackageInstaller
 
@@ -106,7 +108,7 @@ print(installer.get_version())
 
 ---
 
-Pip Installer
+## Pip Installer
 
 from pyputil_install.pip_installer import repair
 
@@ -115,7 +117,7 @@ repair()
 
 ---
 
-Stdlib Installer
+## Stdlib Installer
 
 from pyputil_install.stdlib_installer import install_stdlib
 
@@ -124,7 +126,7 @@ install_stdlib("json")
 
 ---
 
-Python Installer
+## Python Installer
 
 from pyputil_install.python_installer.installer import PythonInstaller
 
@@ -136,7 +138,7 @@ installer.set_default("3.11.5")
 
 ---
 
-Compiler Installer
+## Compiler Installer
 
 from pyputil_install.compiler_installer import activate
 
@@ -145,7 +147,7 @@ activate("gcc", "14.2.0-2")
 
 ---
 
-Supported Python Versions
+## Supported Python Versions
 
 CPython 3.9+
 
@@ -155,7 +157,7 @@ PyPy (partial support)
 
 ---
 
-Storage Paths
+## Storage Paths
 
 Component	Default Path
 
@@ -168,9 +170,9 @@ Package Cache	~/.cache/packman/
 
 ---
 
-Main Environment Variables
+### Main Environment Variables
 
-Variable	Purpose
+## Variable	Purpose
 
 TOOLFORGE_HOME	Custom install root
 TOOLFORGE_BIN_DIR	Symlink directory
@@ -182,9 +184,9 @@ PIP_BREAK_SYSTEM_PACKAGES	Allow externally-managed installs
 
 ---
 
-Exit Codes
+### Exit Codes
 
-Code	Meaning
+## Code	Meaning
 
 0	Success
 1	General error
@@ -197,7 +199,7 @@ Code	Meaning
 
 ---
 
-🏗️ Architecture
+### 🏗️ Architecture
 
 URL Layer
     ↓
@@ -210,6 +212,6 @@ Discovery Layer
 
 ---
 
-License
+### License
 
 MIT
